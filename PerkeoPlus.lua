@@ -81,7 +81,7 @@ SMODS.Joker({
                 })
             end
 
-            if ctx.consumeable.config.center.key == "c_pkpl_perkeo_food" then
+            if ctx.consumeable.config.center.key == "c_pkpl_perkeo_food_pro" then
                 while card.ability.extra.amount < 8 do
                     SMODS.scale_card(card, {
                         ref_table = card.ability.extra,
