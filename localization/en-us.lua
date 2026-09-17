@@ -20,6 +20,7 @@ return {
                     "card in your possession",
                     "at the end of the {C:attention}shop",
                     "{C:inactive,s:0.8}(Max 8 cards created at once){}",
+                    "{C:inactive,s:0.8}(Cannot copy self){}",
                 },
             },
 
@@ -31,6 +32,7 @@ return {
                     "card in your possession",
                     "at the end of the {C:attention}shop",
                     "{C:inactive,s:0.8}(Max 8 cards created at once){}",
+                    "{C:inactive,s:0.8}(Cannot copy self){}",
                 },
             },
         },
