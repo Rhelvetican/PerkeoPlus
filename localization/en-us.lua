@@ -46,6 +46,14 @@ return {
                     { "Increase all {C:attention}Perkeo+{}s card creation amount", "by {C:green}fixed{} {C:attention}1{}" },
                 },
             },
+
+            c_pkpl_perkeo_food_pro = {
+                name = "PerkeoFood Pro",
+                text = {
+                    { "Feed your {C:attention}Perkeo+{} better" },
+                    { "Set all {C:attention}Perkeo+{}s card creation amount", "to {C:attention}maximum amount{}" },
+                },
+            },
         },
 
         Back = {

@@ -71,19 +71,49 @@ SMODS.Joker({
             end
         end
 
-        if ctx.using_consumeable and ctx.consumeable.config.center.key == "c_pkpl_perkeo_food" then
-            SMODS.scale_card(card, {
-                ref_table = card.ability.extra,
-                ref_value = "amount",
-                scalar_value = "inc",
-                scalar_table = { inc = 1 },
-            })
+        if ctx.using_consumeable then
+            if ctx.consumeable.config.center.key == "c_pkpl_perkeo_food" then
+                SMODS.scale_card(card, {
+                    ref_table = card.ability.extra,
+                    ref_value = "amount",
+                    scalar_value = "inc",
+                    scalar_table = { inc = 1 },
+                })
+            end
+
+            if ctx.consumeable.config.center.key == "c_pkpl_perkeo_food" then
+                while card.ability.extra.amount < 8 do
+                    SMODS.scale_card(card, {
+                        ref_table = card.ability.extra,
+                        ref_value = "amount",
+                        scalar_value = "inc",
+                        scalar_table = { inc = 1 },
+                    })
+                end
+            end
         end
     end,
 })
 
 SMODS.Consumable({
     key = "perkeo_food",
+    set = "Spectral",
+    atlas = "consumable",
+
+    pos      = { x = 0, y = 0 },
+    soul_pos = { x = 2, y = 0, extra = { x = 1, y = 0 } },
+
+    can_use = function(_, _)
+        return __ipairs_any(G.jokers.cards, function(item) return item.config.center.key == "j_pkpl_perkeo" end)
+    end,
+
+    loc_vars = function(_, info_queue, _)
+        info_queue[#info_queue + 1] = { key = "j_pkpl_perkeo_info", set = "Joker" }
+    end,
+})
+
+SMODS.Consumable({
+    key = "perkeo_food_pro",
     set = "Spectral",
     atlas = "consumable",
 
