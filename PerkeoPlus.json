@@ -1,0 +1,14 @@
+{
+    "id": "perkeoplus",
+    "name": "Perkeo+",
+    "display_name": "Perkeo+",
+    "author": ["Rhelvetican"],
+    "description": "Adds a new and better Perkeo.",
+    "prefix": "pkpl",
+    "main_file": "PerkeoPlus.lua",
+    "priority": 0,
+    "badge_colour": "235bb0",
+    "badge_text_colour": "FFFFFF",
+    "version": "1.0.0",
+    "dependencies": []
+}
