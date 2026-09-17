@@ -145,13 +145,7 @@ SMODS.Back({
 
                 if G.consumeables then
                     G.consumeables:emplace(SMODS.create_card({
-                        key     = "c_pkpl_perkeo_food",
-                        area    = G.consumeables,
-                        edition = "e_negative",
-                    }))
-
-                    G.consumeables:emplace(SMODS.create_card({
-                        key     = "c_pkpl_perkeo_food",
+                        key     = "c_pkpl_perkeo_food_pro",
                         area    = G.consumeables,
                         edition = "e_negative",
                     }))

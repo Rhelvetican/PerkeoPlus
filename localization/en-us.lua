@@ -61,7 +61,7 @@ return {
                 name = "Perkeo's Deck",
                 text = {
                     "Start with a {C:attention}Perkeo+{}",
-                    "and {C:attention}2{} {C:dark_edition}Negative{} {C:attention}PerkeoFood{}",
+                    "and a {C:dark_edition}Negative{} {C:attention}PerkeoFood Pro{}",
                 },
             },
         },
